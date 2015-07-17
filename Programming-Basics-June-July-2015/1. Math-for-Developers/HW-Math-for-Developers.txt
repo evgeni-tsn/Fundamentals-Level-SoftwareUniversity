@@ -1,0 +1,63 @@
+Tip: If you use notepad for this file turn on word wrap for better UX.
+You can do it from: Format > Word Wrap.
+
+----------------------------------------------------------
+Problem 1: Some Primes
+Find the 24th, 101st and 251st prime number.
+
+Solution: 
+24th prime number is: 89
+101st prime number is: 547
+251st prime number is: 1597
+
+-----------------------------------------------------------
+Problem 2: Some Fibonacci Primes
+Check if the 24th, 101st and 251st prime numbers are part of the base Fibonacci number set. What is their position?
+
+Solution:
+89 is the 11th element of Fibonacci number set.
+547 is not an element of Fibonacci number set.
+1597 is the 17th element of Fibonacci number set.
+
+------------------------------------------------------------
+Problem 3: Some Factorials
+Find 100!, 171! and 250! Give all digits.
+
+Solution:
+100! = 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+
+171! = 1241018070217667823424840524103103992616605577501693185388951803611996075221691752992751978120487585576464959501670387052809889858690710767331242032218484364310473577889968548278290754541561964852153468318044293239598173696899657235903947616152278558180061176365108428800000000000000000000000000000000000000000
+
+250! = 3232856260909107732320814552024368470994843717673780666747942427112823747555111209488817915371028199450928507353189432926730931712808990822791030279071281921676527240189264733218041186261006832925365133678939089569935713530175040513178760077247933065402339006164825552248819436572586057399222641254832982204849137721776650641276858807153128978777672951913990844377478702589172973255150283241787320658188482062478582659808848825548800000000000000000000000000000000000000000000000000000000000000
+
+--------------------------------------------------------------
+Problem 4: Calculate Hypotenuse
+You are given three right angled triangles. Find the length of their hypotenuses.
+	1.	Catheti: 3 and 4
+	2.	Catheti:  10 and 12
+	3.	Catheti 100 and 250
+
+Solution:
+1. x^2 = 3^2 + 4^2 = 9 + 16 = 25 => x=5cm
+2. x^2 = 10^2 + 12^2 = 100 + 144 = 244 => x=15.62cm
+3. x^2 = 100^2 + 250^2 = 10000 + 62500 = 72500 => x=269.26cm
+
+---------------------------------------------------------------
+Problem 5: Numeral System Conversions
+1. Convert 1234d to binary and hexadecimal numeral systems.
+2. Convert 1100101b to decimal and hexadecimal numeral systems.
+3. Convert ABChex to decimal and binary numeral systems.
+
+Solution:
+1. 1234(dec) is: 10011010010(bin) and 4D2(hex)
+2. 1100101(bin) is: 65(hex) and 101(dec)
+3. ABC(hex) is: 101010111100(bin) and 2748(dec)
+
+----------------------------------------------------------------
+Problem 6: Least Common Multiple
+Find LCM(1234, 3456).
+
+Solution:
+LCM(1234, 3456) is 2132352
+
+
