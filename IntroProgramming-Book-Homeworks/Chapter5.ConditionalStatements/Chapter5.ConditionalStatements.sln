@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapValues", "SwapValues\SwapValues.csproj", "{81E4E633-EAE3-4025-9F64-C94A08E1F476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicationSign", "MultiplicationSign\MultiplicationSign.csproj", "{B3E763A5-2C00-4F15-86F9-DF26060C39AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81E4E633-EAE3-4025-9F64-C94A08E1F476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E4E633-EAE3-4025-9F64-C94A08E1F476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E4E633-EAE3-4025-9F64-C94A08E1F476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E4E633-EAE3-4025-9F64-C94A08E1F476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E763A5-2C00-4F15-86F9-DF26060C39AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E763A5-2C00-4F15-86F9-DF26060C39AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E763A5-2C00-4F15-86F9-DF26060C39AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E763A5-2C00-4F15-86F9-DF26060C39AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
