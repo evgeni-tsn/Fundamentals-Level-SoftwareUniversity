@@ -8,10 +8,10 @@ class SubsetSums
 
     static void Main()
     {
-        //int n = int.Parse(Console.ReadLine());
-        int n = 21;
-        //int[] numbers = Console.ReadLine().Split().Select(int.Parse).Distinct().ToArray();
-        int[] numbers = {2,3,4,5,12,32,15,12,1,4,2,3,5,6,1,22};
+        int n = int.Parse(Console.ReadLine());
+        //int n = 21;
+        int[] numbers = Console.ReadLine().Split().Select(int.Parse).Distinct().ToArray();
+        //int[] numbers = {2,3,4,5,12,32,15,12,1,4,2,3,5,6,1,22};
 
         var subset = new List<int>();
         double combinations = Math.Pow(2, numbers.Length);

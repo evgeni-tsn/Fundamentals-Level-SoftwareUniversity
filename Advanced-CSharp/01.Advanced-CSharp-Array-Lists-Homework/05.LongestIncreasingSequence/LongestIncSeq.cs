@@ -7,8 +7,8 @@ class LongestIncreasingSequence
     static void Main()
     {
         int counter = 0;
-        //List<int> nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse).ToList();
-        List<int> nums = new List<int>() {2,3,50,12,43,23,5,4,5,6,7,8,30,20};
+        List<int> nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse).ToList();
+        //List<int> nums = new List<int>() {2,3,50,12,43,23,5,4,5,6,7,8,30,20};
         List<List<int>> result = new List<List<int>>();
         while (nums.Count > 0)
         {
