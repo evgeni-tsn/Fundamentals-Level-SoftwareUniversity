@@ -10,7 +10,7 @@ class Phonebook
 
     static void Main()
     {
-        Dictionary<string, string> phonebook = new Dictionary<string, string>();
+        Dictionary<string, List<string>> phonebook = new Dictionary<string, List<string>>();
 
         string contactInformation = Console.ReadLine();
         string[] contactTokens;
@@ -18,17 +18,34 @@ class Phonebook
         string contactNumber = String.Empty;
 
         while (contactInformation != "search")
-        {
+        { 
             contactTokens = contactInformation.Split(new char[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
             contactName = contactTokens[0];
             contactNumber = contactTokens[1];
             if (!phonebook.ContainsKey(contactName))
             {
-                phonebook.Add(contactName,contactNumber);
+                phonebook[contactName] = new List<string>();
+            }
+            phonebook[contactName].Add(contactNumber);
+
+            contactInformation = Console.ReadLine();
+        }
+        while (true)
+        {
+            string searchedName = Console.ReadLine();
+            if (phonebook.ContainsKey(searchedName))
+            {
+                foreach (KeyValuePair<string, List<string>> kvp in phonebook)
+                {
+                    if (kvp.Key == searchedName)
+                    {
+                    Console.WriteLine("{0} -> {1}", kvp.Key, string.Join(" ",phonebook[searchedName]));
+                    }
+                }
             }
             else
             {
-                []
+                Console.WriteLine("Contact {0} does not exist.",searchedName);
             }
         }
     }
