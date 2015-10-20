@@ -16,7 +16,6 @@ public class _7RandomizeNumbersFromNtoM {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         Random random = new Random();
-        HashSet<Integer> uniques = new HashSet<Integer>();
         int n = console.nextInt();
         int m = console.nextInt();
         int low = n;
@@ -25,12 +24,9 @@ public class _7RandomizeNumbersFromNtoM {
             high=low;
         }
         int diff = Math.abs(n-m);
-        while (uniques.size()<diff){
+        for (int i = 0; i < diff+1; i++) {
             int r = (int) (Math.random() * (high - low)) + low;
-            uniques.add(r);
-        }
-        for (int unique : uniques){
-            System.out.print (unique+" ");
+            System.out.print(r + " ");
         }
         if (n==m){
             System.out.println(n);
