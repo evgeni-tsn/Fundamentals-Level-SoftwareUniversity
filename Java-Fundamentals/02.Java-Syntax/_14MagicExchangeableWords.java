@@ -32,7 +32,7 @@ public class _14MagicExchangeableWords {
                     exchangeability.put(firstString.charAt(i), secondString.charAt(i));
                 }
 
-                            }
+            }
         } else {
             System.out.println("The strings must be with equal length...");
             System.exit(0);

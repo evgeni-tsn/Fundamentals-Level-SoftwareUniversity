@@ -18,17 +18,21 @@ public class _7RandomizeNumbersFromNtoM {
         Random random = new Random();
         int n = console.nextInt();
         int m = console.nextInt();
-        int low = n;
-        int high = m;
-        if (low>high){
-            high=low;
+        if (n > m){
+            int temp = n;
+            n = m;
+            m = temp;
         }
-        int diff = Math.abs(n-m);
-        for (int i = 0; i < diff+1; i++) {
-            int r = (int) (Math.random() * (high - low)) + low;
-            System.out.print(r + " ");
-        }
-        if (n==m){
+        if (n != m){
+            for (int i = 0; i <= m - n; i++) {
+                Random rn = new Random();
+
+                int rndNumber = n + rn.nextInt(m - n + 1);
+
+                System.out.print(rndNumber + " ");
+
+            }
+        }else{
             System.out.println(n);
         }
     }

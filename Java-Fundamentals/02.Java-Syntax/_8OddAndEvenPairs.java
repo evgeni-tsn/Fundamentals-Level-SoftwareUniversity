@@ -12,28 +12,24 @@ public class _8OddAndEvenPairs {
     //TO RUN THIS CLASS PRESS CTRL+SHIFT+F10
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        System.out.print("Enter the size of array (even num): ");
-        int sizeOfArray = console.nextInt();
-        if (sizeOfArray%2==1){
-            System.out.println("Invalid lenght");
-            return;
-        }
-        int[] array = new int[sizeOfArray];
-        System.out.printf("Enter %d elements with space between: ",sizeOfArray);
-        for (int i = 0; i < array.length; i++) {
-            array[i] = console.nextInt();
-        }
 
-        for (int i = 1; i < array.length; i+=2) {
-            if ((array[i-1]%2==0)&&(array[i]%2==0)){
-                System.out.printf("%d, %d -> both are even\n",array[i-1], array[i]);
+        String[] inputArray = console.nextLine().split(" ");
+        if (inputArray.length%2!=0){
+            System.out.println("Invalid lenght");
+        }else {
+            for (int i = 0; i < inputArray.length; i += 2) {
+                int firstNum = Integer.parseInt(inputArray[i]);
+                int secondNum = Integer.parseInt(inputArray[i + 1]);
+
+                String str = "different";
+                if (firstNum % 2 ==0 && secondNum % 2 == 0) {
+                    str = "both are even";
+                } else if (firstNum % 2 != 0 && secondNum % 2 != 0) {
+                    str = "both are odd";
+                }
+                System.out.format("%d, %d -> %s", firstNum, secondNum, str);
+                System.out.println();
             }
-            else if ((array[i-1]%2==1)&&(array[i]%2==1)){
-                System.out.printf("%d, %d -> both are odd\n", array[i - 1], array[i]);
-            }
-            else{
-                System.out.printf("%d, %d -> different\n",array[i-1], array[i]);
-            }
-        }
     }
+}
 }

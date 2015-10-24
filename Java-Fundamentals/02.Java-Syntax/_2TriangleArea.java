@@ -21,6 +21,6 @@ public class _2TriangleArea {
         int cx = console.nextInt();
         int cy = console.nextInt();
         int triangleArea = (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by)) / 2;
-        System.out.println(triangleArea);
+        System.out.println(Math.abs(triangleArea));
     }
 }
