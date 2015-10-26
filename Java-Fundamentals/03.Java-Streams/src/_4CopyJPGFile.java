@@ -12,32 +12,16 @@ public class _4CopyJPGFile {
         {
             FileInputStream fis = new FileInputStream("res/original.jpg");
             FileOutputStream fos = new FileOutputStream("res/my-copied-picture.jpg");
-
-            try
-            {
                 int currentByte = fis.read();
                 while( currentByte != -1 )
                 {
                     fos.write( currentByte );
                     currentByte = fis.read();
                 }
-            }
-            catch( IOException exception )
-            {
-                System.err.println( "IOException occurred!" );
-                exception.printStackTrace();
-            }
-            finally
-            {
-                fis.close();
-                fos.close();
-                System.out.println( "Copied file!" );
-            }
         }
         catch( IOException exception )
         {
             System.err.println( "Problems with file!" );
-            exception.printStackTrace();
         }
     }
 }
