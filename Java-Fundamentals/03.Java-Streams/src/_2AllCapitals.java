@@ -5,23 +5,30 @@ public class _2AllCapitals {
     //The file should be overwritten. Use BufferedReader, FileReader, FileWriter, and PrintWriter.
 
     public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
         try (
                 BufferedReader fr = new BufferedReader(
                                 new FileReader("res/2.AllCapitals-input.txt"));
-                BufferedWriter fw =
-                        new BufferedWriter(
-                                new FileWriter("res/2.AllCapitals-output.txt"));
+
                 )
         {
+
             while (true){
             String line = fr.readLine();
             if (line == null)break;
-                fw.write(line.toUpperCase());
-                fw.newLine();
+                sb.append(line.toUpperCase()+"\r\n");
             }
             System.out.println("Done");
         } catch (IOException ioex){
             System.err.println("File not found. Check out file: 2.AllCapitals-output.txt");
+        }
+        try (BufferedWriter fw =
+                     new BufferedWriter(
+                             new PrintWriter("res/2.AllCapitals-input.txt"))){
+            fw.write(sb.toString());
+        }
+        catch (IOException ioex){
+
         }
     }
 }
