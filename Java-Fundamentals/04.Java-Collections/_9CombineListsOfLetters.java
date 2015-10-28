@@ -13,8 +13,8 @@ public class _9CombineListsOfLetters {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
-        ArrayList<Character> first = new ArrayList(Arrays.asList(console.nextLine().split("\\s+")));
-        ArrayList<Character> second = new ArrayList(Arrays.asList(console.nextLine().split("\\s+")));
+        ArrayList<Character> first = new ArrayList(Arrays.asList(console.nextLine().split("")));
+        ArrayList<Character> second = new ArrayList(Arrays.asList(console.nextLine().split("")));
         for (int i = 0; i < second.size(); i++) {
             if(!first.contains(second.get(i))){
                 first.add(second.get(i));
