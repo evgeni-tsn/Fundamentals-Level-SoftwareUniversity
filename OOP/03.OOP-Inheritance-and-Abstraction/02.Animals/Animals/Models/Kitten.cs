@@ -3,10 +3,10 @@ using _02.Animals.Animals.Interfaces;
 
 namespace _02.Animals.Animals
 {
-    public class Kitten : Animal, ISoundProducible
+    public class Kitten : Animal
     {
         public Kitten(string name, int age) 
-            : base(name, age, Gender.Male)
+            : base(name, age, Gender.Feale)
         {
         }
 
