@@ -3,7 +3,7 @@ using _02.Animals.Animals.Interfaces;
 
 namespace _02.Animals.Animals
 {
-    public class Cat:Animal, ISoundProducible
+    public class Cat:Animal
     {
         public Cat(string name, int age, Gender gender) 
             : base(name, age, gender)

@@ -3,7 +3,7 @@ using _02.Animals.Animals.Interfaces;
 
 namespace _02.Animals.Animals
 {
-    public class Frog:Animal, ISoundProducible
+    public class Frog:Animal
     {
         public Frog(string name, int age, Gender gender) 
             : base(name, age, gender)
