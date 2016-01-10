@@ -9,7 +9,6 @@
         public LocalCourse(string name)
             : base(name)
         {
-            this.Name = name;
             this.TeacherName = null;
             this.Students = new List<string>();
             this.Lab = null;
@@ -18,8 +17,6 @@
         public LocalCourse(string courseName, string teacherName)
             : base(courseName, teacherName)
         {
-            this.Name = courseName;
-            this.TeacherName = teacherName;
             this.Students = new List<string>();
             this.Lab = null;
         }
@@ -27,9 +24,6 @@
         public LocalCourse(string courseName, string teacherName, IList<string> students)
             : base(courseName, teacherName, students)
         {
-            this.Name = courseName;
-            this.TeacherName = teacherName;
-            this.Students = students;
             this.Lab = null;
         }
 

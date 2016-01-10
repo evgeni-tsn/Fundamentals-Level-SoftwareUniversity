@@ -6,9 +6,9 @@
 
     public class OffsiteCourse : Course
     {
-        public OffsiteCourse(string name) : base(name)
+        public OffsiteCourse(string name) 
+            : base(name)
         {
-            this.Name = name;
             this.TeacherName = null;
             this.Students = new List<string>();
             this.Town = null;
@@ -16,8 +16,6 @@
 
         public OffsiteCourse(string courseName, string teacherName) : base(courseName, teacherName)
         {
-            this.Name = courseName;
-            this.TeacherName = teacherName;
             this.Students = new List<string>();
             this.Town = null;
         }
@@ -25,9 +23,6 @@
         public OffsiteCourse(string courseName, string teacherName, IList<string> students)
             : base(courseName, teacherName, students)
         {
-            this.Name = courseName;
-            this.TeacherName = teacherName;
-            this.Students = students;
             this.Town = null;
         }
 
