@@ -1,4 +1,4 @@
-# SoftwareUniversity
+# Software University
 All Software University resources, homeworks, exercises and so on from Fundamentals Level.
 
 It contains: 
