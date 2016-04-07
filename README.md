@@ -1,5 +1,5 @@
-# Software University
-All Software University resources, homeworks, exercises and so on from Fundamentals Level.
+# Software University Fundamentals Module
+All Software University homeworks, exercises and so on from Fundamentals Module.
 
 It contains: 
  - Programming Basics - C#
