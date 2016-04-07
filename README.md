@@ -1,4 +1,4 @@
-# Software University Fundamentals Module
+# Fundamentals Module @ Software University 
 All Software University homeworks, exercises and so on from Fundamentals Module.
 
 It contains: 
