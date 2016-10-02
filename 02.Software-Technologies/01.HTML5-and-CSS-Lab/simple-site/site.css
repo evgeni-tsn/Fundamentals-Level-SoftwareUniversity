@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+header, footer, aside, main {
+  background: beige;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+header {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+aside {
+  float: left;
+  margin-top: 0;
+  background: beige;
+  width: 100px;
+}
+
+aside a {
+  display: block;
+  text-align: left;
+  margin: 5px;
+  padding: 8px;
+  text-decoration: none;
+  color: brown;
+}
+
+aside a:hover {
+  background: BurlyWood;
+  border-radius: 3px;
+}
+
+main {
+  margin-left: 130px;
+  text-align: left;
+  background: #F5F5F5;
+}
+
+main h1 {
+  margin: 10px 5px;
+}
+
+p {
+	margin: 10px 5px;
+}
+
+footer {
+  clear: both;
+  font-size: 11pt;
+}
+
+form {
+  background: #eee;
+  display: inline-block;
+  width: 256px;
+  display: block;
+  margin: 0 auto;
+  font-size: 11pt;
+}
+
+form span {
+  display: inline-block;
+  width: 80px;
+  background: #eee;
+  margin: 10px 3px 3px 8px;
+}
+
+form input, form select {
+  width: 150px;
+  height: 20px;
+  margin: 0px 5px;
+  box-sizing: border-box;
+}
+
+form select {
+  margin: 1px;
+}
+
+form input[type='submit'] {
+  display: block;
+  margin: 10px 0 12px 98px;
+  width: 80px;
+  height: 30px;
+}
